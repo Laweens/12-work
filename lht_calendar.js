@@ -30,6 +30,24 @@
 	
 */
 
+
+var dayEvent = new Array();
+
+dayEvent[1] = "";
+dayEvent[2] = "<br /><a href=\"#\">Classic Cinema: Wings</a><br />7 pm <br />$5";
+dayEvent[3] = "<br /><a href=\"#\">The Future is Prologue</a><br />8 pm<br />$18/$24/$36";
+dayEvent[4] = "<br /><a href=\"#\">American Favorites</a><br />7:30 pm<br />$24/$36/$48";
+dayEvent[5] = "<br /><a href=\"#\">Classics Brunch</a><br />11 am<br />$12";
+dayEvent[6] = "<br /><a href=\"#\">LMT Jazz Band</a><br />7 pm<br />$24";
+dayEvent[7] = "";
+for (var j = 8; j <= 31; j++) {
+    dayEvent[j] = " unknown";
+}
+
+
+
+
+
 /* set the date displayed in the calendar */
 var thisDay = new Date("September 24, 2021");
 
@@ -117,15 +135,8 @@ for (var i = 1; i <= totalDays; i++) {
     }
     if (weekDay == 6) htmlCode += "</tr>";
 }
+
     return htmlCode;
 }  // closes the for loop's parent function
 
-var dayEvent = new Array();
 
-dayEvent[1] = "";
-dayEvent[2] = "<br /><a href="#">Classic Cinema: Wings</a><br />7 pm <br />$5";
-dayEvent[3] = "<br /><a href="#">The Future is Prologue</a><br />8 pm<br />$18/$24/$36";
-dayEvent[4] = "<br /><a href="#">American Favorites</a><br />7:30 pm<br />$24/$36/$48";
-dayEvent[5] = "<br /><a href="#">Classics Brunch</a><br />11 am<br />$12";
-dayEvent[6] = "<br /><a href="#">LMT Jazz Band</a><br />7 pm<br />$24";
-dayEvent[7] = "";
